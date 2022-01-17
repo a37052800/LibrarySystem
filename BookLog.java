@@ -15,4 +15,8 @@ public class BookLog {
     public void removeLog(Book book) {
         borrowedList.remove(book.getID());
     }
+
+    public ArrayList<Integer> getBorrowedList() {
+        return borrowedList;
+    }
 }

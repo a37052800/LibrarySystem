@@ -23,4 +23,12 @@ public class User {
     public String getType() {
         return type;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getLimit() {
+        return predefinedNum;
+    }
 }

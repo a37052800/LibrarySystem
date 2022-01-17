@@ -20,8 +20,8 @@ public class Book {
 
     private String borrowerName;
 
-    public String show() {
-        return "";
+    public void show() {
+        System.out.printf("ID: %d Author: %s Subject: %s\n", ID, author, subject);
     }
 
     public int getID() {
@@ -30,6 +30,32 @@ public class Book {
 
     public void setID(int ID) {
         this.ID = ID;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public String getBorrowerName() {
+        return borrowerName;
+    }
+
+    public void borrowBook(User user) {
+        isBorrow = true;
+        borrowerName = user.getName();
+    }
+
+    public void returnBook() {
+        isBorrow = false;
+        borrowerName = "";
+    }
+
+    public boolean isBorrow() {
+        return isBorrow;
     }
 
 }
