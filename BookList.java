@@ -87,7 +87,7 @@ public class BookList {
 	}
 
 	private void findBorrower(int ID) {
-		System.out.printf("User: %s", getBook(ID).getBorrowerName());
+		System.out.printf("User: %s\n", getBook(ID).getBorrowerName());
 	}
 
 	public void findBorrower(User user, int ID) {
